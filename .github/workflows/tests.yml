@@ -1,0 +1,28 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python: ["3.10", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install dependencies
+        run: python -m pip install -r skills/ultimate-youtube/requirements.txt
+      - name: Unit tests
+        run: python -m unittest discover tests -v
+      - name: Every script loads and documents itself
+        shell: bash
+        run: |
+          for s in skills/ultimate-youtube/scripts/yt_*.py; do
+            python "$s" --help > /dev/null || { echo "FAILED: $s"; exit 1; }
+          done

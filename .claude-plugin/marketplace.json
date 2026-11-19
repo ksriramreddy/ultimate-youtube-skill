@@ -1,0 +1,13 @@
+{
+  "name": "ultimate-youtube-skill",
+  "owner": {
+    "name": "Ultimate YouTube Skill contributors"
+  },
+  "plugins": [
+    {
+      "name": "ultimate-youtube",
+      "source": "./",
+      "description": "All-in-one YouTube skill: publish, analyze, research competitors and plan content for any channel, niche or language."
+    }
+  ]
+}

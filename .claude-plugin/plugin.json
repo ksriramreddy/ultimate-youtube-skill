@@ -1,0 +1,7 @@
+{
+  "name": "ultimate-youtube",
+  "version": "1.0.0",
+  "description": "All-in-one YouTube skill for any creator: publish and manage videos, private analytics, competitor and outlier research with transcripts, trends, SEO, scripts, thumbnails, Shorts and content planning.",
+  "license": "MIT",
+  "keywords": ["youtube", "creator", "analytics", "competitor-research", "transcripts", "seo", "upload"]
+}
