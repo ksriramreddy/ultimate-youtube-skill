@@ -57,7 +57,7 @@ Requires Python 3.10+ and Claude Code.
 ### Option 1: plugin (recommended)
 
 ```bash
-claude plugin marketplace add YOUR_GITHUB_USERNAME/ultimate-youtube-skill
+claude plugin marketplace add ksriramreddy/ultimate-youtube-skill
 claude plugin install ultimate-youtube@ultimate-youtube-skill
 ```
 
@@ -67,7 +67,7 @@ Python dependencies from the skill's `requirements.txt` (or uses `uv run`).
 ### Option 2: install script
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/ultimate-youtube-skill.git
+git clone https://github.com/ksriramreddy/ultimate-youtube-skill.git
 cd ultimate-youtube-skill
 ./install.sh            # macOS / Linux
 ```
